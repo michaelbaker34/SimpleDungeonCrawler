@@ -24,7 +24,7 @@
         <Label Content="Menu" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  Background="AliceBlue" Height="50"/>
 
         <!-- action grid -->
-        <Label Content="Action" Grid.Row="1" Grid.Column="0" Background="Lavender" Height="425" VerticalAlignment="Top"/>
+        <Label Grid.Row="1" Grid.Column="0" Background="Lavender" Height="425" VerticalAlignment="Top"/>
         <Grid Grid.Row="1" Grid.Column="0" Background="Lavender">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
@@ -39,6 +39,19 @@
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Name: "/>
+            <Label Grid.Row="0" Grid.Column="1" Content="value"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Class: "/>
+            <Label Grid.Row="1" Grid.Column="1" Content="value"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Health: "/>
+            <Label Grid.Row="2" Grid.Column="1" Content="value"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Experience: "/>
+            <Label Grid.Row="3" Grid.Column="1" Content="value"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="Level: "/>
+            <Label Grid.Row="4" Grid.Column="1" Content="value"/>
+            <Label Grid.Row="5" Grid.Column="0" Content="Gold: "/>
+            <Label Grid.Row="5" Grid.Column="1" Content="value"/>
         </Grid>
         
         <!-- input grid -->
