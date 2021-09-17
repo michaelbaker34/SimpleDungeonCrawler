@@ -8,7 +8,7 @@
         
         Title="Simple Dungeon Crawler" Height="800" Width="500">
 
-    <!-- main grid -->
+    <!-- main grid container -->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -17,14 +17,15 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="270"/>
+            <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Label Content="Menu" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  Background="AliceBlue" Height="50"/>
 
-        <!-- action grid -->
+        <!-- action grid container -->
         <Label Grid.Row="1" Grid.Column="0" Background="Lavender" Height="425" VerticalAlignment="Top"/>
+        <!-- character info grid -->
         <Grid Grid.Row="1" Grid.Column="0" Background="Lavender">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
@@ -42,28 +43,33 @@
 
             <Label Grid.Row="0" Grid.Column="0" Content="Name: "/>
             <Label Grid.Row="0" Grid.Column="1" Content="value"/>
+            
             <Label Grid.Row="1" Grid.Column="0" Content="Class: "/>
             <Label Grid.Row="1" Grid.Column="1" Content="value"/>
+            
             <Label Grid.Row="2" Grid.Column="0" Content="Health: "/>
             <Label Grid.Row="2" Grid.Column="1" Content="value"/>
+            
             <Label Grid.Row="3" Grid.Column="0" Content="Experience: "/>
             <Label Grid.Row="3" Grid.Column="1" Content="value"/>
+            
             <Label Grid.Row="4" Grid.Column="0" Content="Level: "/>
             <Label Grid.Row="4" Grid.Column="1" Content="value"/>
+            
             <Label Grid.Row="5" Grid.Column="0" Content="Gold: "/>
             <Label Grid.Row="5" Grid.Column="1" Content="value"/>
         </Grid>
         
-        <!-- input grid -->
-        <Label Content="Input" Grid.Row="1"  Background="Gainsboro" Margin="0,425,0,0" Height="100" VerticalAlignment="Top" HorizontalAlignment="Center" Width="270"/>
+        <!-- input grid container -->
+        <Label Content="Input" Grid.Row="1"  Background="Gainsboro" Margin="0,425,0,0" Height="100" Width="300"/>
 
-        <!-- map grid -->
+        <!-- map grid container -->
         <Label Content="Map" Grid.Row="1"  Background="Beige" Height="175" VerticalAlignment="Top" Grid.Column="1"/>
 
-        <!-- inventory grid -->
-        <Label Content="Inventory" Grid.Row="1" Grid.Column="1"  Background="BurlyWood" Height="350" VerticalAlignment="Top" Margin="0,175,0,0"/>
+        <!-- inventory grid container -->
+        <Label Content="Inventory" Grid.Row="1" Grid.Column="1"  Background="BurlyWood" Height="350" Margin="0,175,0,0"/>
 
-        <!-- console grid -->
+        <!-- console grid container -->
         <Label Content="Console" Grid.Row="2" Grid.Column="0"  Background="Bisque" Grid.ColumnSpan="2" Height="200"/>
         
     </Grid>
