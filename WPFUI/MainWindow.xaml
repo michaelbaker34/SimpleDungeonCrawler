@@ -18,15 +18,14 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="270"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
-
         </Grid.ColumnDefinitions>
 
-        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Menu" Background="AliceBlue" Height="50"></Label>
-        <Label Grid.Row="1" Grid.Column="0" Content="Action" Background="Lavender" Height="425" VerticalAlignment="Top"></Label>
-        <Label Grid.Row="1" Content="Input" Background="Gainsboro" Margin="0,425,0,0" Height="100" VerticalAlignment="Top" HorizontalAlignment="Center" Width="270"/>
-        <Label Grid.Row="1" Content="Map" Background="Beige" Height="175" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Grid.Row="1" Grid.Column="1" Content="Inventory" Background="BurlyWood" Height="350" VerticalAlignment="Top" Margin="0,175,0,0"></Label>
-        <Label Grid.Row="2" Grid.Column="0" Content="Console" Background="Bisque" Grid.ColumnSpan="2" Height="200"/>
+        <Label Content="Menu" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  Background="AliceBlue" Height="50"></Label>
+        <Label Content="Action" Grid.Row="1" Grid.Column="0"  Background="Lavender" Height="425" VerticalAlignment="Top"></Label>
+        <Label Content="Input" Grid.Row="1"  Background="Gainsboro" Margin="0,425,0,0" Height="100" VerticalAlignment="Top" HorizontalAlignment="Center" Width="270"/>
+        <Label Content="Map" Grid.Row="1"  Background="Beige" Height="175" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Inventory" Grid.Row="1" Grid.Column="1"  Background="BurlyWood" Height="350" VerticalAlignment="Top" Margin="0,175,0,0"></Label>
+        <Label Content="Console" Grid.Row="2" Grid.Column="0"  Background="Bisque" Grid.ColumnSpan="2" Height="200"/>
     </Grid>
 
 </Window>
