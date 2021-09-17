@@ -8,24 +8,51 @@
         
         Title="Simple Dungeon Crawler" Height="800" Width="500">
 
+    <!-- main grid -->
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="270"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="270"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Label Content="Menu" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  Background="AliceBlue" Height="50"></Label>
-        <Label Content="Action" Grid.Row="1" Grid.Column="0"  Background="Lavender" Height="425" VerticalAlignment="Top"></Label>
+        <Label Content="Menu" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  Background="AliceBlue" Height="50"/>
+
+        <!-- action grid -->
+        <Label Content="Action" Grid.Row="1" Grid.Column="0" Background="Lavender" Height="425" VerticalAlignment="Top"/>
+        <Grid Grid.Row="1" Grid.Column="0" Background="Lavender">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        
+        <!-- input grid -->
         <Label Content="Input" Grid.Row="1"  Background="Gainsboro" Margin="0,425,0,0" Height="100" VerticalAlignment="Top" HorizontalAlignment="Center" Width="270"/>
+
+        <!-- map grid -->
         <Label Content="Map" Grid.Row="1"  Background="Beige" Height="175" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Inventory" Grid.Row="1" Grid.Column="1"  Background="BurlyWood" Height="350" VerticalAlignment="Top" Margin="0,175,0,0"></Label>
+
+        <!-- inventory grid -->
+        <Label Content="Inventory" Grid.Row="1" Grid.Column="1"  Background="BurlyWood" Height="350" VerticalAlignment="Top" Margin="0,175,0,0"/>
+
+        <!-- console grid -->
         <Label Content="Console" Grid.Row="2" Grid.Column="0"  Background="Bisque" Grid.ColumnSpan="2" Height="200"/>
+        
     </Grid>
 
 </Window>
