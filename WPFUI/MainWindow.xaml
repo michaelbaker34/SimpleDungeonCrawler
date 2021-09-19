@@ -31,7 +31,6 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
-                <RowDefinition/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
@@ -58,6 +57,8 @@
             
             <Label Grid.Row="5" Grid.Column="0" Content="Gold: "/>
             <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"/>
+
+            <Button Grid.Row="6" Grid.Column="1" Content="Add Experience" Click="ButtonBase_OnClick"></Button>
         </Grid>
         
         <!-- input grid container -->
