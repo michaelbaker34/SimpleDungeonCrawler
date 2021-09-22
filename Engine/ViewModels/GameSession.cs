@@ -25,6 +25,7 @@ namespace Engine.ViewModels
 
             CurrentLocation = new Location();
             CurrentLocation.Name = "Home";
+            CurrentLocation.ImageName = "pack://application:,,,/Engine;component/Images/Locations/Home.png";
             CurrentLocation.XCoordinate = 0;
             CurrentLocation.YCoordinate = -1;
             CurrentLocation.Description = "No place like home.";

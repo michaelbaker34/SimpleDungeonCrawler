@@ -75,8 +75,21 @@
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="{Binding CurrentLocation.Name}"/>
-                    <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="{Binding CurrentLocation.Description}"/>
+                    <!-- map grid title -->
+                    <TextBlock Grid.Row="0"
+                               HorizontalAlignment="Center"
+                               Text="{Binding CurrentLocation.Name}"/>
+                    <!-- map grid image -->
+                    <Image Grid.Row="1"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Height="125"
+                           Width="125"
+                           Source="{Binding CurrentLocation.ImageName}"/>
+                    <!-- map grid description -->
+                    <TextBlock Grid.Row="2"
+                               HorizontalAlignment="Center"
+                               Text="{Binding CurrentLocation.Description}"/>
                 </Grid>
             </Border>
         </Grid>
