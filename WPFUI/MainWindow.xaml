@@ -23,10 +23,8 @@
 
         <Label Content="Menu" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  Background="AliceBlue" Height="50"/>
 
-        <!-- action grid container -->
-        <Label Grid.Row="1" Grid.Column="0" Background="Lavender" Height="425" VerticalAlignment="Top"/>
         <!-- character info grid -->
-        <Grid Grid.Row="1" Grid.Column="0" Background="Lavender">
+        <Grid Grid.Row="1" Grid.Column="0" Background="Lavender" Height="425" VerticalAlignment="Top">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
@@ -60,14 +58,15 @@
             <Label Grid.Row="5" Grid.Column="0" Content="Gold: "/>
             <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"/>
 
+            <!-- test button -->
             <Button Grid.Row="6" Grid.Column="1" Content="Add Experience" Click="ButtonBase_OnClick"></Button>
         </Grid>
-        
-        <!-- input grid container -->
-        <Label Content="Input" Grid.Row="1"  Background="Gainsboro" Margin="0,425,0,0" Height="100" Width="300"/>
 
         <!-- map grid container -->
-        <Label Content="Map" Grid.Row="1"  Background="Beige" Height="175" VerticalAlignment="Top" Grid.Column="1"/>
+        <Grid Grid.Row="1" Grid.Column="1" Background="Beige" Height="175" VerticalAlignment="Top"></Grid>
+
+            <!-- input grid container -->
+        <Label Content="Input" Grid.Row="1"  Background="Gainsboro" Margin="0,425,0,0" Height="100" Width="300"/>
 
         <!-- inventory grid container -->
         <Label Content="Inventory" Grid.Row="1" Grid.Column="1"  Background="BurlyWood" Height="350" Margin="0,175,0,0"/>
