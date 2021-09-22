@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:WPFUI"
         mc:Ignorable="d"
         
-        Title="Simple Dungeon Crawler" Height="800" Width="500">
+        Title="Simple Dungeon Crawler" Height="800" Width="500"
+        FontFamily="Arial"
+        FontSize="11pt"
+        >
 
     <!-- main grid container -->
     <Grid>
@@ -59,7 +62,7 @@
             <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"/>
 
             <!-- test button -->
-            <Button Grid.Row="6" Grid.Column="1" Content="Add Experience" Click="ButtonBase_OnClick"></Button>
+            <Button Grid.Row="6" Grid.Column="1" Content="add xp" Click="ButtonBase_OnClick"></Button>
         </Grid>
 
         <!-- map grid container -->
@@ -73,6 +76,7 @@
                     </Grid.RowDefinitions>
 
                     <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="{Binding CurrentLocation.Name}"/>
+                    <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="{Binding CurrentLocation.Description}"/>
                 </Grid>
             </Border>
         </Grid>
