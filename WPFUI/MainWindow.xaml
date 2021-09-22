@@ -63,9 +63,21 @@
         </Grid>
 
         <!-- map grid container -->
-        <Grid Grid.Row="1" Grid.Column="1" Background="Beige" Height="175" VerticalAlignment="Top"></Grid>
+        <Grid Grid.Row="1" Grid.Column="1" Background="Beige" Height="175" VerticalAlignment="Top">
+            <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1">
+                <Grid Margin="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
 
-            <!-- input grid container -->
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="{Binding CurrentLocation.Name}"/>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <!-- input grid container -->
         <Label Content="Input" Grid.Row="1"  Background="Gainsboro" Margin="0,425,0,0" Height="100" Width="300"/>
 
         <!-- inventory grid container -->
