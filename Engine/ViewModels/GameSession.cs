@@ -10,8 +10,8 @@ namespace Engine.ViewModels
     public class GameSession
     {
         public Player CurrentPlayer { get; set; }
-        public World CurrentWorld { get; set; }
         public Location CurrentLocation { get; set; }
+        public World CurrentWorld { get; set; }
 
         // GameSession Object Constructor
         public GameSession()
@@ -30,6 +30,8 @@ namespace Engine.ViewModels
             CurrentLocation.XCoordinate = 0;
             CurrentLocation.YCoordinate = -1;
             CurrentLocation.Description = "No place like home.";
+
+            CurrentWorld = new World();
         }
     }
     
