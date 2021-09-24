@@ -19,7 +19,20 @@ namespace Engine.Models
             location.Description = description;
             location.ImageName = imageName;
 
-            _locations.Add(location)
+            _locations.Add(location);
+        }
+
+        public Location LocationAt(int xCoordinate, int yCoordinate)
+        {
+            foreach (Location location in _locations)
+            {
+                if (location.XCoordinate == xCoordinate && location.YCoordinate == yCoordinate)
+                {
+                    return location;
+                }
+            }
+            return null;
         }
     }
+
 }
