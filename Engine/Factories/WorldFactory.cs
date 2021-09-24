@@ -11,7 +11,11 @@ namespace Engine.Factories
     {
         internal World CreateWorld()
         {
-            return new World();
+            World newWorld = new World();
+
+            newWorld.AddLocation(0, -1, "Home", "No place like home.", "pack://application:,,,/Engine;component/Images/Locations/Home.png");
+            
+            return newWorld;
         }
     }
 }
