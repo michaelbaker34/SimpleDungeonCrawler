@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Engine.Models;
+using Engine.Factories;
 
 namespace Engine.ViewModels
 {
@@ -31,7 +32,8 @@ namespace Engine.ViewModels
             CurrentLocation.YCoordinate = -1;
             CurrentLocation.Description = "No place like home.";
 
-            CurrentWorld = new World();
+            WorldFactory factory = new WorldFactory();
+            CurrentWorld = factory.CreateWorld();
         }
     }
     
