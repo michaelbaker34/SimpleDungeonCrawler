@@ -25,15 +25,10 @@ namespace Engine.ViewModels
             CurrentPlayer.Level = 1;
             CurrentPlayer.Gold = 100;
 
-            CurrentLocation = new Location();
-            CurrentLocation.Name = "Home";
-            CurrentLocation.ImageName = "pack://application:,,,/Engine;component/Images/Locations/Home.png";
-            CurrentLocation.XCoordinate = 0;
-            CurrentLocation.YCoordinate = -1;
-            CurrentLocation.Description = "No place like home.";
-
             WorldFactory factory = new WorldFactory();
             CurrentWorld = factory.CreateWorld();
+
+            CurrentLocation = CurrentWorld.LocationAt(0, -1);
         }
     }
     
