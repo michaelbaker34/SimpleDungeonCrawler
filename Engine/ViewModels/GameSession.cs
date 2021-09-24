@@ -10,6 +10,7 @@ namespace Engine.ViewModels
     public class GameSession
     {
         public Player CurrentPlayer { get; set; }
+        public World CurrentWorld { get; set; }
         public Location CurrentLocation { get; set; }
 
         // GameSession Object Constructor
