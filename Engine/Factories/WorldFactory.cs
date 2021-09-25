@@ -25,6 +25,18 @@ namespace Engine.Factories
             newWorld.AddLocation(-1, -1, "Field",
                 "A field", "");
 
+            newWorld.AddLocation(1, 0, "Tavern",
+                "A Tavern.", "");
+
+            newWorld.AddLocation(2, 0, "Cellar",
+                "A Cellar.", "");
+
+            newWorld.AddLocation(1, 0, "Front Gate",
+                "Village front gate", "");
+
+            newWorld.AddLocation(0, 1, "Forest",
+                "A Forest", "");
+
             return newWorld;
         }
     }
