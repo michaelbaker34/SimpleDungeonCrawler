@@ -16,9 +16,7 @@ using Engine.ViewModels;
 
 namespace WPFUI
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    // Interaction logic for MainWindow.xaml
     public partial class MainWindow : Window
     {
         private GameSession _gameSession;

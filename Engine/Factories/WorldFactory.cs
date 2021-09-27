@@ -11,6 +11,7 @@ namespace Engine.Factories
     {
         internal World CreateWorld()
         {
+            // instantiate world object and add locations
             World newWorld = new World();
 
             newWorld.AddLocation(0, -1, "Home", 
