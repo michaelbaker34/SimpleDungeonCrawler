@@ -6,11 +6,16 @@
         xmlns:local="clr-namespace:WPFUI"
         mc:Ignorable="d"
         
-        Title="Simple Dungeon Crawler" Height="800" Width="500"
+        Title="Simple Dungeon Crawler" Height="815" Width="500"
         FontFamily="Arial"
         FontSize="11pt"
         >
 
+    <!-- looks at value hidden if false -->
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
+    </Window.Resources>
+    
     <!-- main grid container -->
     <Grid>
         <Grid.RowDefinitions>
@@ -118,14 +123,21 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button Content="North" Grid.Row="0" Grid.Column="1" BorderThickness="0" Click="OnClick_MoveNorth"/>
+            <Button Content="North" Grid.Row="0" Grid.Column="1" BorderThickness="0"
+                    Click="OnClick_MoveNorth" 
+                    Visibility="{Binding HasLocationToNorth, Converter={StaticResource BooleanToVisibility}}"/>
 
-            <Button Content="South" Grid.Row="2" Grid.Column="1" BorderThickness="0" Click="OnClick_MoveSouth"/>
+            <Button Content="South" Grid.Row="2" Grid.Column="1" BorderThickness="0"
+                    Click="OnClick_MoveSouth" 
+                    Visibility="{Binding HasLocationToSouth, Converter={StaticResource BooleanToVisibility}}"/>
 
-            <Button Content="East" Grid.Row="1" Grid.Column="2" BorderThickness="0" Click="OnClick_MoveEast"/>
+            <Button Content="East" Grid.Row="1" Grid.Column="2" BorderThickness="0"
+                    Click="OnClick_MoveEast" 
+                    Visibility="{Binding HasLocationToEast, Converter={StaticResource BooleanToVisibility}}"/>
 
-            <Button Content="West" Grid.Row="1" Grid.Column="0" BorderThickness="0" Click="OnClick_MoveWest"/>
-
+            <Button Content="West" Grid.Row="1" Grid.Column="0" BorderThickness="0"
+                    Click="OnClick_MoveWest" 
+                    Visibility="{Binding HasLocationToWest, Converter={StaticResource BooleanToVisibility}}"/>
 
         </Grid>
 
