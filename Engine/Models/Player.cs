@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Engine.Models
 {
     // implements NotifyPropertyChanged interface for OnPropertyChanged event listener
-    public class Player : INotifyPropertyChanged
+    public class Player : BaseNotificationClass
     {
         private string _name;
         private string _class;
@@ -77,11 +77,5 @@ namespace Engine.Models
             } 
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }
