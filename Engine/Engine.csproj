@@ -5,11 +5,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Resource Include="Images\Locations\Home.png" />
+    <None Remove="Images\Locations\Cellar.png" />
+    <None Remove="Images\Locations\Farm.png" />
+    <None Remove="Images\Locations\Field.png" />
+    <None Remove="Images\Locations\Forest.png" />
+    <None Remove="Images\Locations\FrontGate.png" />
+    <None Remove="Images\Locations\Tavern.png" />
+    <None Remove="Images\Locations\Trader.png" />
+    <None Remove="Images\Locations\VillageCenter.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Images\Locations\" />
+    <Resource Include="Images\Locations\Cellar.png" />
+    <Resource Include="Images\Locations\Farm.png" />
+    <Resource Include="Images\Locations\Field.png" />
+    <Resource Include="Images\Locations\Forest.png" />
+    <Resource Include="Images\Locations\FrontGate.png" />
+    <Resource Include="Images\Locations\Home.png" />
+    <Resource Include="Images\Locations\Tavern.png" />
+    <Resource Include="Images\Locations\Trader.png" />
+    <Resource Include="Images\Locations\VillageCenter.png" />
   </ItemGroup>
 
 </Project>

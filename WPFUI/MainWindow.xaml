@@ -102,8 +102,33 @@
         <Label Content="Inventory" Grid.Row="1" Grid.Column="1"  Background="BurlyWood" Height="350" Margin="0,175,0,0"/>
 
         <!-- console grid container -->
-        <Label Content="Console" Grid.Row="2" Grid.Column="0"  Background="Bisque" Grid.ColumnSpan="2" Height="210"/>
+        <Label Content="Console" Grid.Row="2" Grid.Column="0"  Background="Bisque" Height="210"/>
         
+        <!-- movement grid container -->
+        <Grid Grid.Row="2" Grid.Column="1" Background="Beige">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Content="North" Grid.Row="0" Grid.Column="1" BorderThickness="0" Click="OnClick_MoveNorth"/>
+
+            <Button Content="South" Grid.Row="2" Grid.Column="1" BorderThickness="0" Click="OnClick_MoveSouth"/>
+
+            <Button Content="East" Grid.Row="1" Grid.Column="2" BorderThickness="0" Click="OnClick_MoveEast"/>
+
+            <Button Content="West" Grid.Row="1" Grid.Column="0" BorderThickness="0" Click="OnClick_MoveWest"/>
+
+
+        </Grid>
+
     </Grid>
 
 </Window>
