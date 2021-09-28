@@ -9,12 +9,14 @@ using Engine.Factories;
 
 namespace Engine.ViewModels
 {
+    // implements NotifyPropertyChanged interface for OnPropertyChanged event listener
     public class GameSession : INotifyPropertyChanged
     {
         private Location _currentLocation;
 
         public Player CurrentPlayer { get; set; }
         public World CurrentWorld { get; set; }
+
         public Location CurrentLocation 
         {
             get { return _currentLocation; } 
@@ -26,6 +28,25 @@ namespace Engine.ViewModels
             }
         }
 
+        public bool HasLocationToNorth
+        {
+            get { return CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate + 1) != null; }
+        }
+
+        public bool HasLocationToSouth
+        {
+            get { return CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate - 1) != null; }
+        }
+
+        public bool HasLocationToEast
+        {
+            get { return CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate) != null; }
+        }
+
+        public bool HasLocationToWest
+        {
+            get { return CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate) != null; }
+        }
 
         // GameSession Object Constructor
         public GameSession()

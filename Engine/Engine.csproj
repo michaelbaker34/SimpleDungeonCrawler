@@ -5,13 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\Locations\Cellar.png" />
-    <None Remove="Images\Locations\Farm.png" />
-    <None Remove="Images\Locations\Field.png" />
-    <None Remove="Images\Locations\Forest.png" />
-    <None Remove="Images\Locations\FrontGate.png" />
-    <None Remove="Images\Locations\Tavern.png" />
-    <None Remove="Images\Locations\Trader.png" />
     <None Remove="Images\Locations\VillageCenter.png" />
   </ItemGroup>
 
