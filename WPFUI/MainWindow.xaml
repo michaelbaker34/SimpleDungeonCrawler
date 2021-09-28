@@ -61,8 +61,9 @@
             <Label Grid.Row="5" Grid.Column="0" Content="Gold: "/>
             <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"/>
 
-            <!-- test button -->
-            <Button Grid.Row="6" Grid.Column="1" Content="add xp" Click="ButtonBase_OnClick"></Button>
+            <!-- add xp test button -->
+            <!-- <Button Grid.Row="6" Grid.Column="1" Content="add xp" Click="ButtonBase_OnClick"></Button> -->
+            
         </Grid>
 
         <!-- map grid container -->
