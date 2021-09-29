@@ -7,9 +7,9 @@ using Engine.Models;
 
 namespace Engine.Factories
 {
-    internal class WorldFactory
+    internal static class WorldFactory
     {
-        internal World CreateWorld()
+        internal static World CreateWorld()
         {
             // instantiate world object and add locations
             World newWorld = new World();
