@@ -55,13 +55,15 @@ namespace Engine.ViewModels
         // GameSession Object Constructor
         public GameSession()
         {
-            CurrentPlayer = new Player();
-            CurrentPlayer.Name = "TestPlayer";
-            CurrentPlayer.Class = "TestClass";
-            CurrentPlayer.HitPoints = 10;
-            CurrentPlayer.ExperiencePoints = 0;
-            CurrentPlayer.Level = 1;
-            CurrentPlayer.Gold = 100;
+            CurrentPlayer = new Player
+            {
+                Name = "Scott",
+                Class = "Fighter",
+                HitPoints = 10,
+                Gold = 1000000,
+                ExperiencePoints = 0,
+                Level = 1
+            };
 
             WorldFactory factory = new WorldFactory();
             CurrentWorld = factory.CreateWorld();
